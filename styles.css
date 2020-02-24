@@ -1,0 +1,35 @@
+h1{color:#700000;font-family: 'Permanent Marker', cursive;}
+.boi{
+  width:11em;
+  height:11em;
+  margin 0 auto;
+  background:url(boi.png) center no-repeat;
+  background-size:80%;
+}
+.deadboi{
+  width:11em;
+  height:11em;
+  margin 0 auto;
+  background:url(deadboi.png) center no-repeat;
+  background-size:80%;
+}
+
+#hp{
+  width:200px;
+  border: 2px solid black;
+  margin: 0 auto 2em auto;
+}
+
+#hp div{
+  height:1em;
+  background: crimson;
+}
+
+#controls{
+  width: 120px;
+  margin: 0 auto;
+}
+#controls button{
+  background:#700000;
+  color:whitesmoke;
+}

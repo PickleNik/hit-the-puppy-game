@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="icon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>nue</title>
+        <link href="styles.css" rel="stylesheet" />
+        <script src="https://unpkg.com/vue"></script>
+    </head>
+    <body>
+        <div id="app" align="center">
+          <h1>HIT THE PUPPY</h1>
+
+          <div v-on:click="punch" v-bind:class="{ deadboi: ended}" class = "boi"></div>
+
+          <div align="left" id = "hp">
+            <div v-bind:style="{ width: health + '%'}"></div>
+          </div>
+
+          <div id = "controls">
+            <button v-on:click="punch" v-show="!ended" id="punch">Punch</button>
+            <button v-on:click="restart" id = "restart">Restart</button>
+          </div>
+        </div>
+    </body>
+
+    <script src="app.js"></script>
+</html>
